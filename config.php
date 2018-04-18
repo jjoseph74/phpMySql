@@ -1,6 +1,13 @@
 <?php
-session_start();
- 
+//session_start(); *** This was not necessary to work on my localhost ***
+
+/*localhost test config*/
+/*$hostname = "localhost";
+$username = "root";
+$password = "";
+$dbname = "site16db";*/
+
+/* host login*/
 $hostname = "mysql.yaacotu.com";
 $username = "studcollab";
 $password = "collabor8";
