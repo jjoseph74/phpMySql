@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("config.php");
+include_once("countconfig.php");
 
 session_unset();
 
@@ -19,10 +19,10 @@ if (mysqli_num_rows($result) > 0) {
         $_SESSION [$curPerson] = $row["studID"];
         $_SESSION [$curScore] = $row["score"];
     }
-    $_SESSION ["tot"] = $i;   // Set tot session variable to number of scores in database.
+    $_SESSION ["tot"] = $i;
 } else {
-    session_unset();    // Remove all session variables.
+    session_unset();    // remove all session variables
 }
     
-header('Location:scores.php');    // Go back to original page.
+header('Location:countscores.php');    // go back to original page
 ?>
